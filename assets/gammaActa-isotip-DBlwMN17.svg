@@ -1,0 +1,26 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" fill="none" stroke="none" stroke-opacity="0"/>
+  <defs>
+    <style>
+      <!--
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&amp;display=swap');
+      .logo-text {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+      }
+      -->
+      /* Franja de baix: Negre */
+      .color-franja-baix { fill: #000000; }
+      /* Franja del mig: Vermell Casteller */
+      .color-franja-mig { fill: #d31b26; }
+      /* Franja de dalt/check: Marró avellana, amb fill i stroke perquè és un traç gruixut */
+      .color-franja-dalt-check { fill: #a95d17; stroke: #a95d17; }
+    </style>
+  </defs>
+  <g transform="translate(10, 30)">
+    <rect x="0" y="40" width="42" height="14" rx="7" class="color-franja-baix"/>
+    <rect x="18" y="20" width="38" height="14" rx="7" class="color-franja-mig"/>
+    <path d="M42 4L50 12L72 -12" class="color-franja-dalt-check" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

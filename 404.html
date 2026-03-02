@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirigint…</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      (function () {
+        // Detecta base pel primer segment (/repo-name/)
+        var segments = window.location.pathname.split('/').filter(Boolean);
+        var base = segments.length ? '/' + segments[0] + '/' : '/';
+        var fullPath = window.location.pathname.replace(base, '') + (window.location.search || '') + (window.location.hash || '');
+        var target = base + '?redirect=' + encodeURIComponent('/' + fullPath.replace(/^\//, ''));
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirigint a l'aplicació…</p>
+  </body>
+</html>
